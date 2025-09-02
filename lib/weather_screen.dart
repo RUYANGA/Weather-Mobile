@@ -68,7 +68,7 @@ class WeatherScreen extends StatelessWidget {
                   SizedBox(
                     width: 150,
                     child: Card(
-                      elevation: 6,
+                      elevation: 3,
                       child: Padding(
                         padding: EdgeInsets.all(16.0),
                         child: Column(
@@ -84,7 +84,7 @@ class WeatherScreen extends StatelessWidget {
                   SizedBox(
                     width: 150,
                     child: Card(
-                      elevation: 6 ,
+                      elevation: 3 ,
                       child: Padding(
                         padding: EdgeInsets.all(16.0),
                         child: Column(
@@ -100,7 +100,7 @@ class WeatherScreen extends StatelessWidget {
                   SizedBox(
                     width: 150,
                     child: Card(
-                      elevation: 6 ,
+                      elevation: 3 ,
                       child: Padding(
                         padding: EdgeInsets.all(16.0),
                         child: Column(
@@ -116,7 +116,7 @@ class WeatherScreen extends StatelessWidget {
                   SizedBox(
                     width: 150,
                     child: Card(
-                      elevation: 6 ,
+                      elevation: 3 ,
                       child: Padding(
                         padding: EdgeInsets.all(16.0),
                         child: Column(
@@ -134,10 +134,40 @@ class WeatherScreen extends StatelessWidget {
               ),
               
             ),
+            SizedBox(height: 30.0),
             Align(
               alignment: AlignmentGeometry.centerLeft,
               child: Text("Additional Information",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),)) ,
             SizedBox(height: 30.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Column(
+                  children: [
+                    Icon(Icons.water_drop, size: 32, color: Colors.blue),
+                    Text('Humidity', style: TextStyle(fontSize: 20)),
+                    Text('78%', style: TextStyle(fontSize: 20)),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.air, size: 32, color: Colors.blue),
+                    Text('Wind Speed', style: TextStyle(fontSize: 20)),
+                    Text('15 km/h', style: TextStyle(fontSize: 20)),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.beach_access, size: 32, color: Colors.blue),
+                    Text('Pressure', style: TextStyle(fontSize: 20)),
+                    Text('1013 hPa', style: TextStyle(fontSize: 20)),
+                  ],
+                  
+                ),
+              ],
+            ),
+            SizedBox(height: 150.0),
+            Text("Powered by Merci RUYANGA",style: TextStyle(fontSize: 16),)
           ],
         ),
       ),
