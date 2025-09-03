@@ -320,7 +320,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                   ),
                   const SizedBox(height: 50.0),
                   const Text(
-                    "Powered by Merci RUYANGA",
+                    "Powered by ByteNest",
                     style: TextStyle(fontSize: 16),
                   ),
                   const SizedBox(height: 50.0),
